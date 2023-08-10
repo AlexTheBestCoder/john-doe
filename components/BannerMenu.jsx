@@ -10,7 +10,7 @@ export default function BannerMenu() {
   return (
     <div className={styles["header-banner"]}>
       <h1>John & Doe</h1>
-      {router.pathname === '/' && <h2>Architectes d'intérieur</h2>}
+      {router.pathname === '/' && <h2>Architectes d&apos;intérieur</h2>}
     </div>
   );
 }

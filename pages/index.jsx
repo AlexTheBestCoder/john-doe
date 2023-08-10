@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>John & Doe | Architectes d'Intérieur</title>
+      <title>John &amp; Doe | Architectes d&apos;Intérieur</title>
       </Head>
       <ParallaxProvider>
         <Parallax className={styles["box-container-home"]} y={[10, -10]}>
