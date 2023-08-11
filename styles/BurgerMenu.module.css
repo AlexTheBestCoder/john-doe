@@ -1,54 +1,99 @@
 /* BurgerMenu.css */
 
 .burger-menu {
-    position: relative;
-  }
-  
-  .burger-icon {
-    display: flex;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .bar {
-    width: 42px;
-    height: 6px;
-    background-color: #333;
-    margin: 3px 0;
-  }
-  
-  .menu-items {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    width: 100%;
-    background-color: #fff;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    display: none;
-  }
-  
-  .burger-menu.open .menu-items {
-    display: block;
-  }
-  
-  .menu-items ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-  }
-  
-  .menu-items li {
-    padding: 10px 20px;
-    border-bottom: 1px solid #ddd;
-  }
-  
-  .menu-items li:last-child {
-    border-bottom: none;
-  }
-  
-  .menu-items a {
-    text-decoration: none;
-    color: #333;
-    font-weight: bold;
-  }
-  
+  margin-right: 5%;
+  position: relative;
+}
+
+.burger-menu.open {
+  margin-right: 0;
+  align-self: flex-start;
+}
+
+.burger-icon {
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+}
+.burger-icon:hover .bar {
+  transition: all ease 0.3s;
+  background-color: #795e55;
+}
+
+.bar {
+  width: 42px;
+  height: 6px;
+  background-color: #333;
+  margin: 3px 0;
+}
+
+.burger-menu.open .burger-icon {
+  display: none;
+}
+
+.menu-items {
+  position: absolute;
+  top: 0;
+  right: -100%;
+  padding-top: 2cm;
+  padding-left: 1cm;
+  width: 40vw;
+  /* 40% de la largeur de l'écran */
+  height: 100vh;
+  /* Prend toute la hauteur de l'écran */
+  z-index: 15;
+  background-color: #795e55;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  display: none;
+}
+
+.burger-menu.open .menu-items {
+
+  display: block;
+  right: 0;
+  /* Alignez à droite lorsque le menu est ouvert */
+}
+
+.menu-items ul {
+  /* border: 1px solid black; */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 30%;
+  left: 0;
+  width: 100%;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 15%;
+}
+
+.menu-items li {
+  font-size: 30px;
+}
+
+.menu-items li:last-child {
+  border-bottom: none;
+}
+
+.menu-items a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+.menu-items a:hover {
+  color: black;
+}
+
+.menu-items button {
+  border: none;
+  font-weight: bold;
+  background-color: transparent;
+  font-size: 30px;
+}
+
+.menu-items button:hover {
+  transition: all ease 0.5s;
+  cursor: pointer;
+  color: white;
+}

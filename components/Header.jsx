@@ -8,7 +8,6 @@ export default function Header() {
   return (
     <nav className={styles["header-box-container"]}>
       <div className={styles["header-container"]}>
-        {" "}
         <BannerMenu />
         <BurgerMenu />
       </div>

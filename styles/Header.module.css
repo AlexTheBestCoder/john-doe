@@ -5,12 +5,11 @@
     align-items: center;
     justify-content: space-between;
     background-color: transparent;
-    /* position: sticky; */
-    top: 0;
 }
 .header-box-container {
     display: flex;
     height: 79vh;
+    padding-left: 5%;
     flex-direction: column;
     justify-content: space-between;
     align-items:flex-end;
@@ -18,10 +17,16 @@
     top: 0;
 }
 .hello {
+    
     text-decoration: none;
     position: relative;
     top: 10%;
     right: 5%;
     color: black;
     font-size: 23px;
+}
+.hello h1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
